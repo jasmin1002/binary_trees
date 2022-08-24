@@ -11,7 +11,7 @@ void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int))
 {
 	int value = -1;
 
-	if (!tree || !func)
+	if (!(tree && func))
 		return; 
 
 	// 1. visit a root node of a tree.
