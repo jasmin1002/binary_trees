@@ -1,5 +1,0 @@
-make --dry-run --keep-going --print-directory
-make: Entering directory '/home/nikki/Documents/Alx/binary_trees'
-gcc -std=c11 -Wall -ggdb -o myapp  
-make: Leaving directory '/home/nikki/Documents/Alx/binary_trees'
- 
