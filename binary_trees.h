@@ -1,12 +1,10 @@
 #ifndef _BINARY_TREES_H_
 #define _BINARY_TREES_H_
-
 #include <stddef.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <stdbool.h>
-
 /**
  * struct binary_tree_s - Binary tree node
  *
@@ -44,5 +42,4 @@ size_t binary_tree_height(const binary_tree_t *tree);
 void binary_tree_level(const binary_tree_t *tree, size_t l, void (*func)(int));
 void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int));
 bst_t *bst_insert(bst_t **tree, int value);
-
 #endif
