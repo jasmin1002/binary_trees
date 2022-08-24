@@ -42,4 +42,10 @@ size_t binary_tree_height(const binary_tree_t *tree);
 void binary_tree_level(const binary_tree_t *tree, size_t l, void (*func)(int));
 void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int));
 bst_t *bst_insert(bst_t **tree, int value);
-#endif
+binary_tree_t *binary_tree_insert_right(binary_tree_t *, int);
+int binary_tree_is_leaf(const binary_tree_t *);
+void binary_tree_preorder(const binary_tree_t *, void (*)(int));
+void binary_tree_postorder(const binary_tree_t *, void (*)(int));
+size_t binary_tree_depth(const binary_tree_t *);
+size_t binary_tree_leaves(const binary_tree_t *);
+#endif /* End _BINARY_TREES_H_ */
