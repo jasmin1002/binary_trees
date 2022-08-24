@@ -11,8 +11,9 @@ void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int))
 {
 	int value = -1;
 
-	/** postorder means to traverse a tree
-	 *  in this order: <left><right><root>.
+	/**
+	 * postorder means to traverse a tree
+	 * in this order: <left><right><root>.
 	 *
 	 */
 	if (!(tree && func))	/** base condition */
