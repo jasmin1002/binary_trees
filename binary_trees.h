@@ -25,6 +25,12 @@ struct binary_tree_s
 typedef struct binary_tree_s binary_tree_t;
 
 void binary_tree_print(const binary_tree_t *);
+binary_tree_t *binary_tree_node(binary_tree_t *, int);
+binary_tree_t *binary_tree_insert_right(binary_tree_t *, int);
+int binary_tree_is_leaf(const binary_tree_t *);
+void binary_tree_preorder(const binary_tree_t *, void (*)(int));
+void binary_tree_postorder(const binary_tree_t *, void (*)(int));
+size_t binary_tree_depth(const binary_tree_t *);
 
 
-#endif
+#endif /* End _BINARY_TREES_H_ */
