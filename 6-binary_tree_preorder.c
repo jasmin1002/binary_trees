@@ -11,16 +11,17 @@ void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int))
 {
 	int value = -1;
 
+	/** base condition */
 	if (!(tree && func))
 		return;
 
-	// 1. visit a root node of a tree.
+	/** 1. visit a root node of a tree. **/
 	value = tree->n;
 	func(value);
 
-	// 2. visit a left sub-tree.
+	/** 2. visit a left sub-tree. **/
 	binary_tree_preorder(tree->left, func);
 
-	// 3. visit a right sub-tree.
+	/** 3. visit a right sub-tree. **/
 	binary_tree_preorder(tree->right, func);
 }
