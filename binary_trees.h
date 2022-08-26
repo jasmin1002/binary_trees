@@ -53,6 +53,7 @@ void binary_tree_postorder(const binary_tree_t *, void (*)(int));
 size_t binary_tree_depth(const binary_tree_t *);
 size_t binary_tree_leaves(const binary_tree_t *);
 int binary_tree_balance(const binary_tree_t *);
+binary_tree_t *binary_tree_uncle(binary_tree_t *);
 void binary_tree_print(const binary_tree_t *);
 
 
